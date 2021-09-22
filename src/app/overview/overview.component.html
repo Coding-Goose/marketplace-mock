@@ -1,0 +1,8 @@
+<div *ngFor="let product of data" class="list-entry" id="container">
+  <img src="assets/gpu.png" alt="graka-bild" width="15%">
+  <div>
+  <a routerLink="/detail/{{product.id}}">{{product.title}}</a>
+  <p>{{product.description}}</p>
+  <h2 id="preis">{{product.price}}€</h2>
+  </div>
+</div>
